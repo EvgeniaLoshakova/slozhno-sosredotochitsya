@@ -4,10 +4,15 @@
 */
 :root {
   --accent-color: #ff0070;
+  --rec-decor-color: #ff0070;
+  --theme-menu-button-color: #ff0070;
+  --theme-menu-button-color-hover: #FF007066;
   --accent-text-color: #000028;
   --title-color: #db00ff;
+  --content-title-color: #ff0070;
   --shadow-color: #ff0070;
+  --link-shadow-color: #ff0070;
   --bg-color: #000028;
   --color: #f1b2ce;
-  --font-family: 'IBM Plex mono', monospace; 
+  --font-family: 'IBM Plex mono', sans-serif;
 }

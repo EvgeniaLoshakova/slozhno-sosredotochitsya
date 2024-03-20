@@ -3,20 +3,35 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme-light {
+:root.theme_light {
   --accent-color: #ff8dcb;
+  --rec-decor-color: #f5f5f5;
+  --theme-menu-button-color: #353430;
+  --theme-menu-button-color-hover: #32312D66;
   --title-color: #ffc2e6;
+  --content-title-color: #353430;
   --shadow-color: #ff0070;
+  --link-shadow-color: #ff8dcb;
   --bg-color: #f5f5f5;
   --accent-text-color: #353430;
   --color: #353430;
 }
 
+.theme_light .rec-decor,
+.theme_light .rec-decor::after {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
-  :root.theme-light {
+  :root.theme_light {
     --accent-color: #ff8dcb;
+    --rec-decor-color: #f5f5f5;
+    --theme-menu-button-color: #353430;
+    --theme-menu-button-color-hover: #32312D66;
     --title-color: #ffc2e6;
+    --content-title-color: #353430;
     --shadow-color: #ff0070;
+    --link-shadow-color: #ff8dcb;
     --bg-color: #f5f5f5;
     --accent-text-color: #353430;
     --color: #353430;
@@ -28,4 +43,16 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  background-image: url(../images/cover-image-light.png);
+  --accent-color: #ff8dcb;
+  --rec-decor-color: #f5f5f5;
+  --theme-menu-button-color: #353430;
+  --theme-menu-button-color-hover: #32312D66;
+  --title-color: #ffc2e6;
+  --content-title-color: #353430;
+  --shadow-color: #ff0070;
+  --link-shadow-color: #ff8dcb;
+  --bg-color: #f5f5f5;
+  --accent-text-color: #353430;
+  --color: #353430;
 }
