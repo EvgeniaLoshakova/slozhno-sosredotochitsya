@@ -165,6 +165,11 @@
 
 .accent-heading-normal {
   margin-block-end: 10px;
+  color: var(--accent-text-color);
+  display: inline-block;
+  width: 100%;
+  background-color: var(--accent-color);
+  font-weight: 400;
 }
 
 .accent-heading {
@@ -173,14 +178,6 @@
   width: 100%;
   background-color: var(--accent-color);
   margin-block-end: 10px;
-}
-
-.accent-heading-normal {
-  color: var(--accent-text-color);
-  display: inline-block;
-  width: 100%;
-  background-color: var(--accent-color);
-  font-weight: 400;
 }
 
 .cards {
