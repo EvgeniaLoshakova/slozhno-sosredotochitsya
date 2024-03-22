@@ -4,13 +4,13 @@
   margin: 0 auto;
   min-inline-size: 375px;
   max-inline-size: 1024px;
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-color: var(--bg-color);
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), monospace;
 }
 
 .header {
@@ -78,7 +78,7 @@
 }
 
 .header__theme-menu-button {
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), monospace;
   font-size: 18px;
   line-height: 18px;
   font-weight: 400;
@@ -103,9 +103,13 @@
   margin-block-start: 8px;
 }
 
+.item-3 p {
+  margin-block-end: 0;
+}
+
 .title {
   color: var(--title-color);
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), monospace;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 95.7px;
   font-weight: 700;
@@ -128,7 +132,7 @@
 
 .heading {
   color: var(--accent-color);
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), monospace;
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 700;
@@ -141,7 +145,7 @@
 
 .content__paragraph {
   color: var(--color);
-  font-family: var(--font-family), sans-serif;
+  font-family: var(--font-family), monospace;
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 400;
@@ -195,7 +199,6 @@
 .gallery {
   margin-block-end: 40px;
 }
-
 
 .footer {
   height: 100vh;
@@ -460,10 +463,11 @@ a:focus-visible {
 }
 
 .page:has(.header__theme-menu-button_type_dark:checked) {
+  --bg-image: url(../images/cover-image-dark.png);
   --accent-color: #ff0070;
   --rec-decor-color: #ff0070;
   --theme-menu-button-color: #ff0070;
-  --theme-menu-button-color-hover: #FF007066;
+  --theme-menu-button-color-hover: #ff007066;
   --accent-text-color: #000028;
   --title-color: #db00ff;
   --content-title-color: #ff0070;
@@ -471,13 +475,15 @@ a:focus-visible {
   --link-shadow-color: #ff0070;
   --bg-color: #000028;
   --color: #f1b2ce;
+  --font-family: 'IBM Plex mono', monospace;
 }
 
 .page:has(.header__theme-menu-button_type_light:checked) {
+  --bg-image: url(../images/cover-image-light.png);
   --accent-color: #ff8dcb;
   --rec-decor-color: #f5f5f5;
   --theme-menu-button-color: #353430;
-  --theme-menu-button-color-hover: #32312D66;
+  --theme-menu-button-color-hover: #32312d66;
   --title-color: #ffc2e6;
   --content-title-color: #353430;
   --shadow-color: #ff0070;
@@ -485,4 +491,5 @@ a:focus-visible {
   --bg-color: #f5f5f5;
   --accent-text-color: #353430;
   --color: #353430;
+  --font-family: 'IBM Plex mono', monospace;
 }

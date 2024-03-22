@@ -12,13 +12,13 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
-    <link rel="icon" href=".//images/favicon.ico" sizes="any" />
-    <link rel="icon" href=".//images/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <link rel="mobile-icon" href=".//images/mobile-icon.png" />
   </head>
   <body class="page">
     <header class="header">
-      <div class="rec-decor">REC</div>
+      <span class="rec-decor">REC</span>
       <nav class="header__theme-menu item-1">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -50,9 +50,10 @@
       </div>
       <div class="item-3">
         <p class="heading accent-heading">
-          Что делать, когда не можешь делать ничего <br />
-          Или почему нам так сложно сконцентрироваться, особенно когда очень
-          надо
+          Что делать, когда не можешь делать ничего
+        </p>
+        <p class="heading accent-heading">
+          Или почему нам так сложно сконцентрироваться, особенно когда очень надо
         </p>
       </div>
     </header>
@@ -71,6 +72,7 @@
               class="content__link"
               href="https://dana.org/article/multicosts-of-multitasking/"
               target="_blank"
+              rel="noopener noreferrer"
               >выяснили</a
             >, что мозгу тяжело концентрироваться даже на двух делах
             одновременно. А когда в поле внимания попадает несколько важных
@@ -176,6 +178,7 @@
                   class="content__link"
                   href="https://www.sciencedirect.com/science/article/abs/pii/S0272494415000328"
                   target="_blank"
+                  rel="noopener noreferrer"
                   >показал</a
                 >, что созерцание природы повышает концентрацию, в то время как
                 после просмотра городских пейзажей она наоборот понижается.
@@ -216,33 +219,38 @@
               <img
                 class="card__img"
                 src="./images/sunset.png"
-                alt="Закат солнца над морем"
+                alt="Закат солнца над морем. На горизонте горы. Две птицы летят"
+                loading="lazy"
               />
               <img
                 class="card__img"
                 src="./images/ice-cream.png"
-                alt="Мороженое"
+                alt="Розовые и фиолетовые шарики мороженого с вафельными палочками и взбитыми сливками"
+                loading="lazy"
               />
               <img
                 class="card__img"
                 src="./images/tape.png"
-                alt="Аудиокассета"
+                alt="Старая пленочная аудиокассета"
+                loading="lazy"
               />
               <img
                 class="card__img"
                 src="./images/books.png"
-                alt="Стопка книг"
+                alt="Стопка книг и чашка с надписью Читай больше"
+                loading="lazy"
               />
               <img
                 class="card__img"
                 src="./images/street.png"
-                alt="Улица"
+                alt="Улица, с двух сторон невысокие дома, сверху натянуты электрические провода"
+                loading="lazy"
               />
         </div>
       </section>
     </main>
     <footer class="footer">
-      <h1 class="title footer__title">focus</h1>
+      <h2 class="title footer__title">focus</h2>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>
