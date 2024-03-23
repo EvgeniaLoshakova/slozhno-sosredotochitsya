@@ -19,6 +19,7 @@
     --bg-color: #000028;
     --color: #f1b2ce;
     --font-family: 'IBM Plex mono', monospace;
+    --rec-decor: visible;
   }
 }
 
@@ -36,4 +37,5 @@
   --bg-color: #000028;
   --color: #f1b2ce;
   --font-family: 'IBM Plex mono', monospace;
+  --rec-decor: visible;
 }

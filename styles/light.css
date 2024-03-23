@@ -19,13 +19,8 @@
     --accent-text-color: #353430;
     --color: #353430;
     --font-family: 'IBM Plex mono', monospace;
+    --rec-decor: hidden;
   }
-
-  .rec-decor, 
-  .rec-decor::after {
-    display: none;
-  }
-
 }
 
 .page.theme_light {
@@ -42,4 +37,5 @@
   --accent-text-color: #353430;
   --color: #353430;
   --font-family: 'IBM Plex mono', monospace;
+  --rec-decor: hidden;
 }
